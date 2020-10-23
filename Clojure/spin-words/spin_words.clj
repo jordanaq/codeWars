@@ -1,6 +1,10 @@
-(ns clojure.spin-words
+(ns spin-words
   (:require [clojure.string :as str]))
 
 (defn spin-words [strng]
-  ;; Write your code here
-)
+  (reduce (fn [x y] (str x " " y)) (map
+                                     (fn [x]
+                                       (if (>= (count x) 5)
+                                         (str/reverse x)
+                                          x))
+                                     (str/split strng #" "))))
