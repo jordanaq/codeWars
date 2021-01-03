@@ -1,4 +1,4 @@
 (ns kata.pyramid)
 
 (defn pyramid [n]
-  "your code here")
+  (take n (map #(vector (take % (repeat 1))) (range))))
