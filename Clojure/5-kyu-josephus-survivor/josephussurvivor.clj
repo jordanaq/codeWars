@@ -1,5 +1,6 @@
 (ns josephusurvivor.core)
 
 (defn josephus-survivor [n k]
-  (if (= 1 n) 1
-    (inc (mod (+ (dec k) (josephus-survivor (dec n) k)) n))))
+  (loop [n n, k k, pos #(inc (mod (dec %) n))]
+    (if (= 1 n) (pos 1)
+      (recur (dec n) k (comp pos #(inc (mod (+ (dec k) %) n)))))))
