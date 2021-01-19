@@ -6,4 +6,4 @@
        (* (mod x 3) 100)
        (* (quot y 3) 500)
        (* (mod y 3) 50)
-       (apply + (map #(if (>= (second %) 3) (* (first %) 100) 0) z)))))
+       (apply + (map #(* (quot (second %) 3) (first %) 100) z)))))
