@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 
+// excessive use of long longs but I didn't want to create a bandwidth bottleneck anywhere in the code (the problem required the two long longs in the result vector)
 class SumSquaredDivisors
 {
 public:
