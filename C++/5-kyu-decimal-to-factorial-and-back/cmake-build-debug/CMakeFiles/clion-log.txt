@@ -1,0 +1,4 @@
+D:\Devel\JetBrains\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Devel\GitHub\codeWars\C++\5-kyu-decimal-to-factorial-and-back
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Devel/GitHub/codeWars/C++/5-kyu-decimal-to-factorial-and-back/cmake-build-debug
