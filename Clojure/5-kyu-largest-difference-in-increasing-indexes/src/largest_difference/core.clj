@@ -7,6 +7,5 @@
   or equal to the value in the smaller index."
   (apply max (for [start (range (count data))
                    end (reverse (range (count data)))
-                   :let [diff (- end start)]
                    :when (>= (data end) (data start))]
-               diff)))
+               (- end start))))
