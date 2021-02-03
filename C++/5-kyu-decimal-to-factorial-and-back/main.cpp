@@ -10,9 +10,10 @@ int main() {
 
     //  factString2Dec tests
     std::cout << "factString2Dec(\"4041000\") = " << Dec2Fact::factString2Dec("4041000") << " and " <<
-              ((Dec2Fact::factString2Dec("4041000") == 2982) ? "IS" : "ISN'T") << " 2982." << std::endl;
+              ((Dec2Fact::factString2Dec("4041000") == 2982LL) ? "IS" : "ISN'T") << " 2982." << std::endl;
     std::cout << "factString2Dec(\"341010\") = " << Dec2Fact::factString2Dec("341010") << " and " <<
-              ((Dec2Fact::factString2Dec("4041000") == 463) ? "IS" : "ISN'T") << " 463." << std::endl;
+              ((Dec2Fact::factString2Dec("341010") == 463LL) ? "IS" : "ISN'T") << " 463." << std::endl;
+
 
     return 0;
 }
