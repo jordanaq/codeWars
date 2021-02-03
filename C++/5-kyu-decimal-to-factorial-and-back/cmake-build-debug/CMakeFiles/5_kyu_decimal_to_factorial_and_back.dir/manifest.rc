@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Devel/GitHub/codeWars/C++/5-kyu-decimal-to-factorial-and-back/cmake-build-debug/CMakeFiles/5_kyu_decimal_to_factorial_and_back.dir/embed.manifest"
