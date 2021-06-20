@@ -59,7 +59,7 @@ int getPos(std::vector<std::vector<int>> &field, int x, int y) {
 
 
 // Pure recursive function. Returns the length of a ship
-__attribute((pure)) int shipLen (std::vector<std::vector<int>> &field, int x, int y) {//}), neighbors prev) {
+__attribute((pure)) char shipLen (std::vector<std::vector<int>> &field, int x, int y) {//}), neighbors prev) {
     // If the function reached the end of the board or a empty space
     if (y < 0 || y > field.size() || x < 0 || x > field[y].size() || !field[y][x]) return 0;
 
@@ -70,7 +70,7 @@ __attribute((pure)) int shipLen (std::vector<std::vector<int>> &field, int x, in
     switch (curr.flags) {
         // Diagonal or edge case
         default:
-            return INT32_MIN;
+            return INT8_MIN;
 
         // case when current position is the end of a ship
         case 0: case 0b1000: case 0b0010:
@@ -90,8 +90,8 @@ __attribute((pure)) int shipLen (std::vector<std::vector<int>> &field, int x, in
 
 // Determines if field is a legal battlefield board
 bool validate_battlefield(std::vector< std::vector<int> > field) {
-    // Empty vector to hold the count of the four possible ship lengths
-    std::vector<char> ships { 0, 0, 0, 0 };
+    // Empty char array to hold the count of the four possible ship lengths
+    char ships[] { 0, 0, 0, 0 };
 
     // Two for loops iterate over every possible x and y value combination
     for (int y = 0; y < field.size(); y++) {
@@ -116,11 +116,12 @@ bool validate_battlefield(std::vector< std::vector<int> > field) {
         }
     }
 
-
     // Returns true only if it hasn't returned by this point and if all ships exist
     return ships[0]==4 && ships[1]==3 && ships[2]==2 && ships[3]==1;
 }
 
+
+// Test case
 int main() {
     std::cout <<
         validate_battlefield(std::vector< std::vector<int> > {
