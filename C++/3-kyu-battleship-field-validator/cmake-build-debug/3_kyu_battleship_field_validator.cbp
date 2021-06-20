@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="3_kyu_battleship_field_validator"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3_kyu_battleship_field_validator">
+				<Option output="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/3_kyu_battleship_field_validator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_kyu_battleship_field_validator"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3_kyu_battleship_field_validator/fast">
+				<Option output="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/3_kyu_battleship_field_validator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_kyu_battleship_field_validator/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/main.cpp">
+			<Option target="3_kyu_battleship_field_validator"/>
+		</Unit>
+		<Unit filename="/mnt/Devel/GitHub/codeWars/C++/3-kyu-battleship-field-validator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

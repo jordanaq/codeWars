@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/3_kyu_battleship_field_validator.dir/main.cpp.o -o 3_kyu_battleship_field_validator 
