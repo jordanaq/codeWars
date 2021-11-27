@@ -2,7 +2,7 @@ defmodule Challenge do
   def get_middle(str) do 
     # return the middle charater(s)
     l = String.length(str)
-    h = floor(l/2)
+    h = div(l,2)
     if h == l/2 do
         String.at(str, h-1) <> String.at(str, h)
     else
