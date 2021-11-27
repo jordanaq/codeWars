@@ -1,0 +1,5 @@
+defmodule Bus do
+  def number(stops) do
+    Enum.sum(Enum.map(stops, fn({on, off}) -> on - off end))
+  end
+end
