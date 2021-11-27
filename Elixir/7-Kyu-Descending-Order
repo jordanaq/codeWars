@@ -1,0 +1,5 @@
+defmodule Kata do
+    def descending_order(n) do
+        Integer.digits(n) |> Enum.sort(:desc) |> Integer.undigits()
+    end
+end
