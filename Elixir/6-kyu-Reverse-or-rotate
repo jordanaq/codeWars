@@ -6,17 +6,14 @@ defmodule Revrot do
       String.graphemes(str)
       |> Enum.map(&String.to_integer(&1))
       |> Enum.chunk_every(sz, sz, :discard)
-      |> Enum.map(fn(arr)->
-                    if rem(Enum.reduce(arr, 0,
-                                fn(x, arr)->(x*x*x)+arr end), 2) == 0 do
-                      Enum.reverse(arr)
-                    else
-                      [head | tail] = arr
-                      tail ++ [head]
-                    end
+      |> Enum.map(fn arr ->
+                    Enum.map(arr, &(&1 * &1 * &1))
+                    |> Enum.sum()
+                    |> (fn x -> rem(x, 2) == 0 end).()
+                    |> if(do: Enum.reverse(arr), else: tl(arr) ++ [hd(arr)])
+                    |> Enum.join
                   end)
-      |> Enum.reduce("", fn(x,acc)-> acc <> Enum.reduce(x, "", &(&2 <> Integer.to_string(&1))) end)
+      |> Enum.join()
     end
   end
-  
 end
