@@ -1,1 +1,5 @@
-
+defmodule Kata do
+  def sum_digits(0), do: 0
+  def sum_digits(i) when i < 0, do: sum_digits(-i)
+  def sum_digits(i), do: rem(i, 10) + sum_digits(div i, 10)
+end
