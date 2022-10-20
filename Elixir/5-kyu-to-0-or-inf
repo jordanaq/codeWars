@@ -1,1 +1,4 @@
-
+defmodule Going do
+    def going(1), do: 1
+    def going(n), do: 1 + ( 1 / n ) * ( going(n-1) )
+end
