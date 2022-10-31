@@ -1,1 +1,5 @@
-
+defmodule TribonacciSequence do
+  @spec tribonacci({number, number, number}, non_neg_integer) :: [number]
+  def tribonacci(_, 0), do: []
+  def tribonacci({a, b, c}, n), do: [a] ++ tribonacci({b, c, a+b+c}, n-1)
+end
