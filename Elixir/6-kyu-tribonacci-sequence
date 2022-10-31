@@ -1,5 +1,8 @@
 defmodule TribonacciSequence do
   @spec tribonacci({number, number, number}, non_neg_integer) :: [number]
+  # Catch when n is zero, base case
   def tribonacci(_, 0), do: []
+  
+  # When n is not zero, pass the signature and decremented n to get next value in tribonacci
   def tribonacci({a, b, c}, n), do: [a | tribonacci({b, c, a+b+c}, n-1)]
 end
