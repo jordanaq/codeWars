@@ -1,11 +1,15 @@
+// Include numberic for std::reduce
 #include<numeric>
 
 std::vector<int> xbonacci(std::vector<int> signature, int n) {
-  size_t l = signature.size();
+  size_t l = signature.size();  // Size of signature
   
+  // Return sub vector if n is less than l
   if (static_cast<size_t>(n) < l) return std::vector(signature.cbegin(), signature.cbegin()+n);
   
+  // Calculate the next element in the sequence until we have n elements
   for (size_t i = 0; n-l>0; ++i, --n) signature.push_back(std::reduce(signature.cbegin()+i, signature.cend()));
   
+  // Return the completed sequence
   return signature;
 }
