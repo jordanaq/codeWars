@@ -1,1 +1,7 @@
-
+defmodule ParenthesesValidator do
+  defp vp("", acc),                       do: acc == 0
+  defp vp("(" <> tail, acc),              do: vp tail, acc+1
+  defp vp(")" <> tail, acc),              do: if acc <= 0, do: false, else: vp tail, acc-1
+  defp vp(<<_head, tail::binary>>, acc),  do: vp tail, acc
+  def valid_parentheses(string), do: vp(string, 0)
+end
