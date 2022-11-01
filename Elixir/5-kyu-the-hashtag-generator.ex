@@ -1,11 +1,12 @@
 defmodule Hashtag do
-  defp valid_len(str), do: String.length(str) < 140
-  defp gen(""), do: false
-  defp gen(input) do
+  defp return_str(""), do: false
+  defp return_str(str) when byte_size(str) >= 140, do: false
+  defp return_str(str), do: "#" <> str
+  
+  def generate(input) do
     input
-    |> String.split
+    |> String.split(" ", trim: true)
     |> Enum.map_join(&String.capitalize/1)
-    |> (&(if valid_len(&1), do: "#" <> &1, else: false)).()
+    |> return_str
   end
-  def generate(input), do: gen(String.trim input)
 end
